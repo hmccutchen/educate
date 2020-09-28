@@ -1,0 +1,12 @@
+
+
+<div class="container">
+<div class="text-center my-64">
+<%= form_for @model do |f|  %>
+<%= f.text_field :school_name, placeholder: "whats your schools name?", :required => true %>
+<%= f.number_field :class_count, placholder: "how many sutdents?", :required => true %>
+<%= f.submit :submit %>
+
+<% end %>
+</div>
+</div>
