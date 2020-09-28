@@ -1,17 +1,18 @@
 
 
-<h1 class="text-center text-lg">Create Your School</h1>
+<h1 class="text-center lg:text-xl">Create Your School</h1>
 
 
 
 
 
-<div class="container">
-<div class="text-center my-64">
+<div class="container mx-48">
+<div class="text-left my-64">
 <%= form_for @model do |f|  %>
-<%= f.text_field :school_name, placeholder: "whats your schools name?", :required => true %>
-<%= f.number_field :class_count, placholder: "how many sutdents?", :required => true %>
-<%= f.submit :submit %>
+<%= f.text_field :school_name, placeholder: "whats your schools name?", :required => true %><br>
+ <%= f.label "how many students does your school have?" ,class: "my-10"%><br>
+<%= f.number_field :class_count, :required => true %><br>
+<%= f.submit :submit, class: "my-2" %>
 <% end %>
 </div>
 </div>

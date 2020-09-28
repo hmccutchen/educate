@@ -12,12 +12,23 @@ class SchoolsController < ApplicationController
   def create 
   	@model = School.create(school_params)
   	if @model.save
-  		puts "School has been saved!"
+  		redirect_to school_path(@model)
   	end
   end
 
+  def show 
+  	load_model
+  end
+
+
+  private
 
   def school_params
   	params.require(:school).permit(:school_name, :class_count)
+  end
+
+
+  def load_model
+  @model = School.find(params[:id])
   end
 end
