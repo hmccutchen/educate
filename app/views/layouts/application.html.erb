@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Educate</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-<%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<head>
+	<title>Educate</title>
+	<%= csrf_meta_tags %>
+	<%= csp_meta_tag %>
+	<%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  </head>
+<body class="min-h-screen bg-gray-100">
 
-  <body class="min-h-screen bg-gray-100">
-  <div class="container mx-auto">
-    <%= yield %>
-  </div>
+	<% flash.each do |type, msg| %>
+	<div class="flash-success">
+		<%= msg%>
+	
+	</div>
+	<% end %>
+	<div class="container mx-auto">
+		<%= yield %>
+	</div>
 </body>
+
+
+<script>
+	$(".flash-success").fadeOut(4000);
+</script>

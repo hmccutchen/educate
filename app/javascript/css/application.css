@@ -4,5 +4,12 @@
 
 
 .mx-48{
-margin-left: 45%;
+margin-left: 42%;
 }
+
+.flash-success{
+text-align: center;
+font-size: 40px;
+background-color: #9fe89f;
+}
+

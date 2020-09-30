@@ -9,6 +9,7 @@
 <div class="container mx-48">
 <div class="text-left my-64">
 <%= form_for @model do |f|  %>
+<%= f.label "what's your schools name?" %> <br>
 <%= f.text_field :school_name, placeholder: "whats your schools name?", :required => true %><br>
  <%= f.label "how many students does your school have?" ,class: "my-10"%><br>
 <%= f.number_field :class_count, :required => true %><br>

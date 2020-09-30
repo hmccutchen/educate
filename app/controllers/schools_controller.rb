@@ -11,9 +11,8 @@ class SchoolsController < ApplicationController
 
   def create 
   	@model = School.create(school_params)
-  	if @model.save
-  		redirect_to school_path(@model)
-  	end
+  	
+  	succuessful_create if @model.save
   end
 
   def show 
@@ -30,5 +29,9 @@ class SchoolsController < ApplicationController
 
   def load_model
   @model = School.find(params[:id])
+  end
+
+  def succuessful_create
+  	redirect_to school_path(@model), notice: "You've created a new School!"
   end
 end
