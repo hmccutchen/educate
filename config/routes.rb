@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'students/index'
+  get 'students/show'
+  get 'students/create'
+  get 'students/new'
   root 'schools#new'
 
   resources :schools
