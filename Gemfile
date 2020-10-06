@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem "better_errors"
 gem "sprockets", "<4"
+gem 'binding_of_caller', '~> 0.8.0'
 
 
 # Use Active Storage variant

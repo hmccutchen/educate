@@ -15,8 +15,10 @@ class SchoolsController < ApplicationController
   	succuessful_create if @model.save
   end
 
+
   def show 
   	load_model
+    @student = Student.new
   end
 
 
@@ -34,4 +36,5 @@ class SchoolsController < ApplicationController
   def succuessful_create
   	redirect_to school_path(@model), notice: "You've created a new School!"
   end
+
 end

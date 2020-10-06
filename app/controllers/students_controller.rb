@@ -13,9 +13,11 @@ class StudentsController < ApplicationController
   end
 
   def create
-  	@model = Student.new(student_params)
+  	load_school
+  	@student = @school.students.build(student_params)
 
-  	@model.save
+     @student.save 
+
   end
 
 
@@ -29,7 +31,7 @@ class StudentsController < ApplicationController
   	params.require(:student).permit(:student_name, :student_email)
   end
 
-  def load_model
-  	@model = School.find(params[:id])
+  def load_school
+  	@school = School.find(params[:school_id])
   end
 end

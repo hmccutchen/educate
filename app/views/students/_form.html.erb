@@ -1,0 +1,7 @@
+
+
+<%= form_for ([@model, @student]) do |f|  %>
+<%=f.text_field :student_name, placeholder: "Student Name"  %> 
+<%=f.text_field :student_email, placeholder: "Student Email" %>
+<%= f.submit :submit %>
+<% end %>
