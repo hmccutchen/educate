@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a fun project in the beginning stages, which will allow users to create a school and add students. The typical workflow will allow teachers to create their school and add all students asscociated with the school and post assignments and current events, and allowing students to post questions and buy books etc..
 
-Things you may want to cover:
-
-* Ruby version
+Tech I plan to add/use in this project:
 
 * System dependencies
 
-* Configuration
+* Devise
 
-* Database creation
+* Tailwind 
 
-* Database initialization
+* Postgresql
 
-* How to run the test suite
+* Rspec/capybara
 
-* Services (job queues, cache servers, search engines, etc.)
+* Jbuilder
 
-* Deployment instructions
+* maybe vue if needed
 
 * ...
