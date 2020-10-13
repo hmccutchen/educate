@@ -16,8 +16,7 @@ class StudentsController < ApplicationController
   	load_school
   	@student = @school.students.build(student_params)
 
-     @student.save 
-
+    @student.save 
   end
 
 

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'schools#new'
+
   resources :schools do
 
   resources :students
