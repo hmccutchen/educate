@@ -2,6 +2,6 @@
 
 <%= form_for ([@model, @student]), class: "student-form", remote: true do |f|  %>
 <%=f.text_field :student_name, placeholder: "Student Name", class: "student-name" %> 
-<%=f.text_field :student_email, placeholder: "Student Email", class: "student-email" %>
+<%=f.email_field :student_email, placeholder: "Student Email", class: "student-email" %>
 <%= f.submit :submit, class: "student-submit" %>
 <% end %>
