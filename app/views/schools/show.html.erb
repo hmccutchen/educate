@@ -1,2 +1,19 @@
 
 <h1 class="text-center lg:text-xl">Welcome <%= @model.school_name %> !</h1>
+<div>
+	<ul>
+	<% @model.class_count.times do %>
+
+		<li>
+			<%= render "students/form" %>
+
+		</li>
+		<br>
+
+	<% end %>
+	</ul>
+	
+</div>
+
+
+<%= link_to "Back", new_school_path %>

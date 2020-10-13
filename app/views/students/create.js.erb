@@ -1,0 +1,24 @@
+
+var submitButton = document.getElementsByClassName("student-submit");
+var studentName = document.getElementsByClassName("student-name");
+var studentEmail = document.getElementsByClassName("student-email");
+
+var studentForm = document.getElementsByClassName("new_student");
+
+
+  
+  for(var button of submitButton){
+	
+	  button.addEventListener("click", function(e){
+       
+		if(e.target.value == "submit"){
+          			
+			e.target.style.display = 'none';
+
+	    }
+	  })
+	}
+
+
+
+	
